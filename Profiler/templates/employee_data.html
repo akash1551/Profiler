@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Employee Database</title>
+</head>
+<body>
+
+
+				{% if employee_list %}
+				{% for i in employee_list %}
+
+				<div class="col-md-3">    
+							
+								{{ i.name }}
+								{{ i.address_line_1 }}
+								{{ i.address_line_2 }}
+								{{ i.city }}
+								{{ i.state }}
+								{{ i.pin_code }}
+
+				</div>
+				{% endfor %}
+				{% endif %}
+
+</body>
+</html>
